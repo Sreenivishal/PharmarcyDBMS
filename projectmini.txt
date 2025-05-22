@@ -1,0 +1,49 @@
+CREATE TABLE Customers(
+                    C_Name VARCHAR(50) NOT NULL,
+                    C_Password VARCHAR(50) NOT NULL,
+                    C_Email VARCHAR(50) PRIMARY KEY NOT NULL, 
+                    C_State VARCHAR(50) NOT NULL,
+                    C_Number VARCHAR(50) NOT NULL 
+                    );
+
+CREATE TABLE Drugs(
+                D_Name VARCHAR(50) NOT NULL,
+                D_ExpDate DATE NOT NULL, 
+                D_Use VARCHAR(50) NOT NULL,
+                D_Qty INT NOT NULL, 
+                D_id INT PRIMARY KEY NOT NULL
+                );
+
+CREATE TABLE Orders(
+                O_Name VARCHAR(100) NOT NULL,
+                O_Items VARCHAR(100) NOT NULL,
+                O_Qty VARCHAR(100) NOT NULL,
+                O_id VARCHAR(100) PRIMARY KEY NOT NULL
+                );
+
+The above Schema contains 3 tables namely Orders,Drugs and Customers 
+
+The Customers table has the no of customers who have created a account in the website and it stores their information
+
+The Drugs table contains the information of the meds available and their details 
+
+The Orders table contains the orders placed by the customer and is grouped accordingly
+
+We have used Stremlit python module for the frontend which allows us to build quick web application directly from Python we have used a generic template with no formatting
+
+We have linked a database(.db) file using Sqlite module 
+
+ID and Passkeys
+Logins:
+  Sreeni (qwerty1)
+  Mithun (qwerty2)
+  Vijay (qwerty)
+
+Admin:
+  admin: admin
+
+To open a stremlit file use this command as admistrator 
+python -m <parth provided by output terminal>
+this should create a local host web application and can be opened on any device on the network
+
+WARNING: Devices are vernuable for MITM Attack as Cyber Security Lab might be in progesses while we are demonstating this
